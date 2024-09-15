@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Bosniak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>DJ Bosniak</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#brand">Ghetto Tales</a></li>
+            </ul>
+        </nav>
+        <button id="toggle-mode">Not-Ghetto</button>
+    </header>
+
+    <section id="about" class="section-about">
+        <h2>About DJ Bosniak</h2>
+        <p>DJ Bosniak is an eclectic DJ who spins a diverse range of music, from house and techno to hip-hop and R&B. Known for his energetic sets and ability to read the crowd, DJ Bosniak creates unforgettable experiences wherever he plays.</p>
+    </section>
+
+    <section id="schedule" class="section-schedule">
+        <h2>Club Schedule</h2>
+        <ul id="club-list">
+            <!-- Club list will be dynamically inserted here -->
+        </ul>
+    </section>
+
+    <section id="music" class="section-music">
+        <h2>Music Genres</h2>
+        <p>DJ Bosniak specializes in:</p>
+        <ul>
+            <li>House</li>
+            <li>Techno</li>
+            <li>Hip-Hop</li>
+            <li>R&B</li>
+            <li>Electronic</li>
+        </ul>
+    </section>
+
+    <section id="brand" class="section-brand">
+        <h2>Ghetto Tales</h2>
+        <p>Ghetto Tales is DJ Bosniak's exclusive brand for booking days in clubs and bars. Ghetto Tales not only brings the best of music but also guarantees a night to remember with top-tier performances and an electrifying atmosphere.</p>
+    </section>
+
+    <section id="dj-set" class="section-set">
+        <h2>DJ Bosniak - Techno & House Set in Tinos</h2>
+        <p>Watch DJ Bosniak's exclusive set recorded live in Tinos, where he played an incredible selection of Techno and House beats.</p>
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xBm7gowNjhY
+            " 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="booking" class="section-booking">
+        <h2>Book Now</h2>
+        <form id="booking-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <button type="submit">Send</button>
+        </form>
+        <p id="status-message"></p>
+    </section>
+
+
+
+    <footer>
+        <p>Follow DJ Bosniak on social media for updates and exclusive content.</p>
+        <div class="social-icons">
+            <!-- Social media icons (to be customized with your own links) -->
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

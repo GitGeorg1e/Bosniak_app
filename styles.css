@@ -1,0 +1,253 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1b1b1b;
+    color: #ffffff;
+}
+
+/* Default dark mode styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1b1b1b;
+    color: #ffffff;
+}
+
+/* White mode styles */
+body.dark-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Styles for other elements in dark mode */
+body.dark-mode header {
+    background-color: #f5f5f5;
+}
+
+body.dark-mode nav ul li a {
+    color: #000000;
+}
+
+body.dark-mode .section-about,
+body.dark-mode .section-schedule,
+body.dark-mode .section-music,
+body.dark-mode .section-brand {
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+body.dark-mode footer {
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+/* Style changes for the booking form in white mode */
+body.dark-mode .section-booking form {
+    background-color: #e0e0e0;
+}
+
+body.dark-mode .section-booking input,
+body.dark-mode .section-booking textarea {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-mode .section-booking button {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+/* Style for toggle button (Right-aligned, smaller, minimal) */
+#toggle-mode {
+    background-color: #ff4500;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px; /* Rounded button */
+    padding: 8px 16px; /* Smaller size, more compact */
+    position: fixed; /* Fixed position */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+    font-size: 14px; /* Smaller font size */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#toggle-mode:hover {
+    background-color: #ff6347;
+}
+
+/* Style when in white mode (Not-Ghetto) */
+body.dark-mode #toggle-mode {
+    background-color: #333; /* Change button background for white mode */
+    color: #ffffff; /* Text color */
+}
+
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    color: #ff4500;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+.section-about, .section-schedule, .section-music, .section-brand {
+    padding: 50px;
+    text-align: center;
+}
+
+.section-schedule ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section-schedule li {
+    background-color: #444;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.section-music ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section-music li {
+    margin: 10px 0;
+}
+
+.section-booking {
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+}
+
+.section-booking form {
+    display: inline-block;
+    text-align: left;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.section-booking label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.section-booking input,
+.section-booking textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.section-booking button {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section-booking button:hover {
+    background-color: #ff6347;
+}
+
+#status-message {
+    margin-top: 15px;
+    color: #ff4500;
+}
+
+
+.section-set {
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+    color: #ffffff;
+}
+
+.section-set h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ff4500;
+}
+
+.section-set p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color:#ddd;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-wrapper iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
