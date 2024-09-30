@@ -1,0 +1,289 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1b1b1b;
+    color: #ffffff;
+}
+
+/* Default dark mode styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1b1b1b;
+    color: #ffffff;
+}
+
+/* White mode styles */
+body.dark-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Styles for other elements in dark mode */
+body.dark-mode header {
+    background-color: #f5f5f5;
+}
+
+body.dark-mode nav ul li a {
+    color: #000000;
+}
+
+body.dark-mode .section-about,
+body.dark-mode .section-schedule,
+body.dark-mode .section-music,
+body.dark-mode .section-brand {
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+body.dark-mode footer {
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+/* Style for toggle button (Right-aligned, smaller, minimal) */
+#toggle-mode {
+    background-color: #ff4500;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px; /* Rounded button */
+    padding: 8px 16px; /* Smaller size, more compact */
+    position: fixed; /* Fixed position */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+    font-size: 14px; /* Smaller font size */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#toggle-mode:hover {
+    background-color: #ff6347;
+}
+
+/* Style when in white mode (Not-Ghetto) */
+body.dark-mode #toggle-mode {
+    background-color: #333; /* Change button background for white mode */
+    color: #ffffff; /* Text color */
+}
+
+/* General button styling (applies to all buttons, including edit button) */
+button {
+    background-color: #ff4500;
+    color: #ffffff;
+    padding: 10px 20px; /* Consistent padding */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1rem; /* Standard button font size */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px; /* Space from the surrounding elements */
+}
+
+button:hover {
+    background-color: #ff6347; /* Slightly lighter orange on hover */
+}
+
+/* Specific styling for buttons in white mode */
+body.dark-mode button {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* Section Styling */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    color: #ff4500;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+.section-about, .section-schedule, .section-music, .section-brand {
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+
+#club-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows the boxes to wrap onto the next line */
+    justify-content:space-around; /* Align boxes to the left */
+    gap: 30px; /* Adds more space between the boxes */
+    margin-top: 20px;
+    padding-left: 0px; /* Ensure the boxes align with the left margin */
+}
+
+.club-item {
+    position: relative;
+    width: 300px; /* Adjust width as needed */
+    height: 300px; /* Ensure the image is a square */
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners for each club box */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Optional shadow for visual effect */
+}
+
+.club-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the box without stretching */
+    border-radius: 10px; /* Matches the club-item's rounded corners */
+}
+
+.club-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px; /* Ensures the text overlay has the same border-radius as the image */
+}
+
+.club-details p {
+    margin: 0;
+}
+
+/* Booking Section */
+.section-booking {
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+}
+
+.section-booking form {
+    display: inline-block;
+    text-align: left;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.section-booking label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.section-booking input,
+.section-booking textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.section-booking button {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section-booking button:hover {
+    background-color: #ff6347;
+}
+
+#status-message {
+    margin-top: 15px;
+    color: #ff4500;
+}
+
+/* Video Section */
+.section-set {
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+    color: #ffffff;
+}
+
+.section-set h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ff4500;
+}
+
+.section-set p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color:#ddd;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-wrapper iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}

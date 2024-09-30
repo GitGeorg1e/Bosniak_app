@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Bosniak</title>
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <!-- Header Section: Contains the logo, navigation, and the theme toggle button -->
+    <header>
+        <div class="logo">
+            <h1>DJ Bosniak</h1>
+        </div>
+        <nav>
+            <!-- Navigation links to various sections of the website -->
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#brand">Ghetto Tales</a></li>
+            </ul>
+        </nav>
+         <!-- Button to toggle between dark and white modes -->
+        <button id="toggle-mode">Not-Ghetto</button>
+    </header>
+
+
+         <!-- About Section: Information about DJ Bosniak -->
+    <section id="about" class="section-about">
+        <h2>About DJ Bosniak</h2>
+        <p>DJ Bosniak is an eclectic DJ who spins a diverse range of music, from house and techno to hip-hop and R&B. Known for his energetic sets and ability to read the crowd, DJ Bosniak creates unforgettable experiences wherever he plays.</p>
+    </section>
+          <!-- Club Schedule Section: Displays the list of clubs where DJ Bosniak performs -->
+ <section id="schedule" class="section-schedule">
+            <h2>Club Schedule</h2>
+            <p id="instructions" style="display: none;">Edit the text and click Save to update the schedule.</p>
+            <!-- Club List with Round Shaped Boxes and Space for Images -->
+    <div id="club-list" contenteditable="false">
+        <div class="club-item">
+            <img src="IMG_4981.JPG" alt="Club Image" class="club-image">
+            <div class="club-details">
+                <p>Ekei - August 30, 2024</p>
+            </div>
+        </div>
+        <div class="club-item">
+            <img src="IMG_6084.JPG" alt="Club Image" class="club-image">
+            <div class="club-details">
+                <p>The Night Spot - September 5, 2024</p>
+            </div>
+        </div>
+        <div class="club-item">
+            <img src="placeholder.jpg" alt="Club Image" class="club-image">
+            <div class="club-details">
+                <p>Bassline - September 12, 2024</p>
+            </div>
+        </div>
+        <div class="club-item">
+            <img src="placeholder.jpg" alt="Club Image" class="club-image">
+            <div class="club-details">
+                <p>Rhythm Lounge - September 19, 2024</p>
+            </div>
+        </div>
+    </div>
+            <button id="login-edit-btn">Login to Edit</button>
+</section>
+        
+            <!-- Music Genres Section: Information about the types of music DJ Bosniak plays -->
+    <section id="music" class="section-music">
+        <h2>Music Genres</h2>
+        <p>DJ Bosniak specializes in:</p>
+        <ul>
+            <li>House</li>
+            <li>Techno</li>
+            <li>Hip-Hop</li>
+            <li>R&B</li>
+            <li>Electronic</li>
+        </ul>
+    </section>
+      <!-- Ghetto Tales Section: Information about DJ Bosniak's brand, Ghetto Tales -->
+
+    <section id="brand" class="section-brand">
+        <h2>Ghetto Tales</h2>
+        <p>Ghetto Tales is DJ Bosniak's exclusive brand for booking days in clubs and bars. Ghetto Tales not only brings the best of music but also guarantees a night to remember with top-tier performances and an electrifying atmosphere.</p>
+    </section>
+
+       <!-- YouTube DJ Set Section: Embeds the YouTube video of DJ Bosniak's set -->
+    <section id="dj-set" class="section-set">
+        <h2>DJ Bosniak - Techno & House Set in Tinos</h2>
+        <p>Watch DJ Bosniak's exclusive set recorded live in Tinos, where he played an incredible selection of Techno and House beats.</p>
+         <!-- Embed YouTube video -->
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xBm7gowNjhY"
+            
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <!-- Booking Section: Allows users to send a booking request -->
+    <section id="booking" class="section-booking">
+        <h2>Book Now</h2>
+         <!-- Form to send a booking message -->
+        <form id="booking-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <button type="submit">Send</button>
+        </form>
+         <!-- Form to send a booking message -->
+        <p id="status-message"></p>
+    </section>
+
+
+     <!-- Footer Section: Includes social media links for DJ Bosniak -->
+    <footer>
+        <p>Follow DJ Bosniak on social media for updates and exclusive content.</p>
+        <div class="social-icons">
+            <!-- Social media icons (to be customized with your own links) -->
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </footer>
+
+    <!-- External JavaScript file for dynamic functionality -->
+    <script src="scripts.js"></script>
+</body>
+</html>
