@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dj Bosniak</title>
+
+    <!-- Link to Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles2.css">
+
+    <!-- FontAwesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Full-Page Background Section -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="container text-center text-blue">
+            <h1 id="bosniak-logo" class="display-1">Bosniak</h1>
+            <p class="lead">Experience the Best of House, Techno, and Electronic Music</p>
+            <div>
+                <a href="#about" class="btn btn-outline-light btn-lg mt-4 btn-row-top btn-spacing">Learn More</a>
+                <a href="#tour" class="btn btn-outline-light btn-lg mt-4 btn-row-top">Event Dates</a>
+            </div>
+            </div>
+            
+            <button id="toggle-mode" class="btn btn-outline-light btn-lg mt-4 btn-row-top ">Dark Mode</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in-section visible py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="IMG_6084.JPG" alt="Nick Bosniak" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Nick Bosniak</h2>
+                    <p>Nick Bosniak is a world-renowned DJ and music producer known for his electrifying sets. From underground clubs to international festivals, Nick brings high-energy performances and a wide range of music, including house, techno, and EDM.</p>
+                    <p>With a passion for music that transcends genres, Nick has become a global sensation, pushing boundaries and exploring new sounds in the electronic scene.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Dates Section -->
+    <section id="event" class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Upcoming Event Dates</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="event-date bg-primary p-4 rounded">
+                        <h3>April 15, 2024</h3>
+                        <p>New York, NY - Electric Zoo</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="event-date bg-primary p-4 rounded">
+                        <h3>May 3, 2024</h3>
+                        <p>Miami, FL - Ultra Music Festival</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="event-date bg-primary p-4 rounded">
+                        <h3>June 10, 2024</h3>
+                        <p>Las Vegas, NV - EDC Las Vegas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Listen to Nick Bosniak</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123456&color=%23ff5500"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123457&color=%23ff5500"></iframe>
+                </div>
+                <div class="col-md-4">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123458&color=%23ff5500"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center">Book Nick Bosniak</h2>
+            <form action="#" class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send Booking Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Nick Bosniak. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
